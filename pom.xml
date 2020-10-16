@@ -27,7 +27,7 @@
   </parent>
 
   <artifactId>mybatis</artifactId>
-  <version>3.5.5-SNAPSHOT</version>
+  <version>3.5.5-SNAPSHOT-NINGGC</version>
   <packaging>jar</packaging>
 
   <name>mybatis</name>
@@ -250,7 +250,7 @@
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
       <version>8.0.20</version>
-      <scope>test</scope>
+<!--      <scope>test</scope>-->
     </dependency>
     <dependency>
       <groupId>org.assertj</groupId>
@@ -379,6 +379,9 @@
         <excludes>
           <exclude>**/*.java</exclude>
         </excludes>
+      </resource>
+      <resource>
+        <directory>${project.basedir}/src/main/resources</directory>
       </resource>
     </resources>
     <testResources>

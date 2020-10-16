@@ -3,33 +3,56 @@
   <ID>JAVA</ID>
   <OriginalElement>org.apache.ibatis.executor.Executor</OriginalElement>
   <nodes>
-    <node x="112.0" y="0.0">org.apache.ibatis.executor.Executor</node>
-    <node x="172.0" y="81.0">org.apache.ibatis.executor.CachingExecutor</node>
-    <node x="0.0" y="162.0">org.apache.ibatis.executor.SimpleExecutor</node>
-    <node x="8.0" y="81.0">org.apache.ibatis.executor.BaseExecutor</node>
+    <node x="387.0" y="0.0">org.apache.ibatis.executor.Executor</node>
+    <node x="448.5" y="81.0">org.apache.ibatis.executor.CachingExecutor</node>
+    <node x="364.0" y="162.0">org.apache.ibatis.executor.SimpleExecutor</node>
+    <node x="279.5" y="81.0">org.apache.ibatis.executor.BaseExecutor</node>
+    <node x="178.0" y="162.0">org.apache.ibatis.executor.loader.ResultLoaderMap.ClosedExecutor</node>
+    <node x="0.0" y="162.0">org.apache.ibatis.executor.BatchExecutor</node>
+    <node x="550.0" y="162.0">org.apache.ibatis.executor.ReuseExecutor</node>
   </nodes>
   <notes />
   <edges>
+    <edge source="org.apache.ibatis.executor.ReuseExecutor" target="org.apache.ibatis.executor.BaseExecutor">
+      <point x="0.0" y="-15.5" />
+      <point x="629.0" y="132.0" />
+      <point x="409.875" y="132.0" />
+      <point x="55.875" y="15.5" />
+    </edge>
     <edge source="org.apache.ibatis.executor.BaseExecutor" target="org.apache.ibatis.executor.Executor">
       <point x="0.0" y="-15.5" />
-      <point x="80.0" y="56.0" />
-      <point x="140.0" y="56.0" />
-      <point x="-28.0" y="15.5" />
+      <point x="354.0" y="56.0" />
+      <point x="416.0" y="56.0" />
+      <point x="-29.0" y="15.5" />
     </edge>
     <edge source="org.apache.ibatis.executor.CachingExecutor" target="org.apache.ibatis.executor.Executor">
       <point x="0.0" y="-15.5" />
-      <point x="256.0" y="56.0" />
-      <point x="196.0" y="56.0" />
-      <point x="28.0" y="15.5" />
+      <point x="536.0" y="56.0" />
+      <point x="474.0" y="56.0" />
+      <point x="29.0" y="15.5" />
     </edge>
     <edge source="org.apache.ibatis.executor.SimpleExecutor" target="org.apache.ibatis.executor.BaseExecutor">
       <point x="0.0" y="-15.5" />
-      <point x="0.0" y="15.5" />
+      <point x="447.0" y="142.0" />
+      <point x="372.625" y="142.0" />
+      <point x="18.625" y="15.5" />
+    </edge>
+    <edge source="org.apache.ibatis.executor.BatchExecutor" target="org.apache.ibatis.executor.BaseExecutor">
+      <point x="0.0" y="-15.5" />
+      <point x="79.0" y="132.0" />
+      <point x="298.125" y="132.0" />
+      <point x="-55.875" y="15.5" />
+    </edge>
+    <edge source="org.apache.ibatis.executor.loader.ResultLoaderMap.ClosedExecutor" target="org.apache.ibatis.executor.BaseExecutor">
+      <point x="0.0" y="-15.5" />
+      <point x="261.0" y="142.0" />
+      <point x="335.375" y="142.0" />
+      <point x="-18.625" y="15.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="56.0" y="15.5" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="354.0" y="96.5" />
   <SelectedNodes>
-    <node>org.apache.ibatis.executor.Executor</node>
+    <node>org.apache.ibatis.executor.BatchExecutor</node>
   </SelectedNodes>
   <Categories />
   <SCOPE>All</SCOPE>
